@@ -59,7 +59,7 @@ const CreatePost = () => {
 
         try {
           const response = await axios.post(
-            "http://localhost:5000/file/upload",
+            "http://localhost:5000/posts/file/upload",
             data
           );
 
@@ -108,7 +108,7 @@ const CreatePost = () => {
         };
 
         const response = await axios.post(
-          "http://localhost:5000/create",
+          "http://localhost:5000/posts/create",
           post,
           config
         );
