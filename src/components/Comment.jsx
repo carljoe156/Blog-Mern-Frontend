@@ -1,4 +1,4 @@
-export const Comment = ({ props }) => {
+const Comment = ({ props }) => {
   var date = props.postedTime;
   date = date.slice(0, 10);
 
@@ -12,3 +12,4 @@ export const Comment = ({ props }) => {
     </div>
   );
 };
+export default Comment;
