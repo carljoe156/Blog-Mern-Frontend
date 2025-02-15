@@ -7,7 +7,7 @@ import {
   TableRow,
 } from "@mui/material";
 
-export const Categories = (props) => {
+const Categories = (props) => {
   const categories = [
     { id: 1, value: "Music" },
     { value: "Movies" },
@@ -52,3 +52,4 @@ export const Categories = (props) => {
     </Table>
   );
 };
+export default Categories;
