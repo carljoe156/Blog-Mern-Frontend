@@ -7,6 +7,7 @@ import CreatePost from "./pages/CreatePost";
 import Full_Blog from "./pages/FullBlog";
 import MyBlogs from "./pages/MyBlogs";
 import UpdatePost from "./pages/UpdateBlog";
+import ErrorPage from "./pages/ErrorPage";
 function App() {
   return (
     <DataProvider>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/update" element={<UpdatePost />}></Route>
         <Route path="/blog/:id" element={<Full_Blog />}></Route>
         <Route path="/myBlogs" element={<MyBlogs />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </DataProvider>
   );
